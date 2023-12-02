@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>projet 9 </title>
+    <title>projet 10 </title>
   </head>
   <body>
     <div class="container">
@@ -53,7 +53,7 @@
                         
                         <div class="mb-3">
                             <label for="Classe" class="form-label">im</label>
-                            <input type="file" class="form-control" id="Classe"  name="image" value="{{ $etudiants->image }}" placeholder="{{ $etudiants->image }}">
+                            <input type="file" class="form-control" id="Classe"  name="image" value="{{ $etudiants->image }}" >
                         </div>
                         
                         <div class="mb-3">
@@ -69,7 +69,7 @@
                         <label for="Classe" class="form-label">ville</label>
                            <select name="ville" id="ville" class="form-select">
                            @foreach($villes as $ville )
-                            <option value="{{$ville->id }}">{{ $ville->nom }}</option>
+                            <option value="{{$ville->id }} " {{ $etudiants->ville_id == $ville->id ? 'selected':''}} >{{ $ville->nom }}</option>
                             @endforeach
                            </select>
                         </div>
@@ -79,7 +79,7 @@
                         <label for="Classe" class="form-label">nationalite</label>
                            <select name="nationalite" id="ville" class="form-select">
                            @foreach($nationalites as $nationalite )
-                            <option value="{{$nationalite->id }}">{{ $nationalite->nom }}</option>
+                            <option value="{{$nationalite->id }}" {{ $etudiants->nationalite_id == $nationalite->id ? 'selected':''}}>{{ $nationalite->nom }}</option>
                             @endforeach
                            </select>
                         </div>
@@ -88,7 +88,7 @@
                         <label for="Classe" class="form-label">groupe_sanguin</label>
                            <select name="groupe_sanguin" id="ville" class="form-select">
                            @foreach($groupe_sanguins as $groupe_sanguin )
-                            <option value="{{$groupe_sanguin->id }}">{{ $groupe_sanguin->nom }}</option>
+                            <option value="{{$groupe_sanguin->id }}" {{ $etudiants->groupe_sanguin_id == $groupe_sanguin->id ? 'selected':''}}>{{ $groupe_sanguin->nom }}</option>
                             @endforeach
                            </select>
                         </div>

@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>projet 9</title>
+    <title>projet 10</title>
   </head>
   <body>
     <div class="container text-center">
       <div class="row">
         <div class="col s12">
-            <h1>Projet 9</h1>
+            <h1>Projet 10</h1>
            
             <hr>
             <a href="/add" class="btn btn-primary">Ajouter un tuteur</a>

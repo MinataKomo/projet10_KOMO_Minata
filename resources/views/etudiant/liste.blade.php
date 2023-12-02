@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>projet 9</title>
+    <title>projet 10</title>
   </head>
   <body>
     <div class="container text-center">
@@ -56,7 +56,13 @@
                     <td>{{ $etudiant->prenom }}</td>
                     <td>{{ $etudiant->classe }}</td>
                     <td><img src="/image/{{ $etudiant->image }}" alt="" style="height: 30px; width:30px; border-radius:50%"></td>
-                 <td>{{ $etudiant->tuteur->name}}</td>
+
+
+
+                      <td>{{ $etudiant->tuteur->name}}</td>
+
+
+
                  <td>{{ $etudiant->ville->nom}}</td>
                  <td>{{ $etudiant->nationalite->nom}}</td>
                  <td>{{ $etudiant->groupe_sanguin->nom}}</td>

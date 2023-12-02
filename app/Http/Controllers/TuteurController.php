@@ -64,8 +64,11 @@ class TuteurController extends Controller
     }
     public function delete_tuteur($id)
     {
+        
         $tuteur = tuteur::find($id);
+       
         $tuteur->delete();
+       
         return redirect('/tuteur')->with('status', "L\'tuteur a bien ete supprimé avec succes.");
     }
 }
